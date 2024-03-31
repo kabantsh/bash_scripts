@@ -1,7 +1,11 @@
 
 PRAYER_URL="https://api.aladhan.com/v1/timingsByAddress/31-03-2024?address=Dubai,UAE&method=8"
-MY_PRAYER_OUTPUT_FILE="MY_PRAYER_OUTPUT"
-wget https://api.aladhan.com/v1/timingsByAddress/31-03-2024?address=Dubai,UAE&method=8 -o $MY_PRAYER_OUTPUT_FILE
+#PWD="`PWD`"
+MY_PRAYER_OUTPUT_DIR="`pwd`/output_prayer_times"
+mkdir -p $MY_PRAYER_OUTPUT_FILE
+MY_PRAYER_OUTPUT_FILE="`printf $`MY_PRAYER_OUTPUT_DIR/prayer_times_script.log"
+
+wget -o $MY_PRAYER_OUTPUT_FILE "https://api.aladhan.com/v1/timingsByAddress/31-03-2024?address=Dubai,UAE&method=8"
 #wget "$PRAYER_URL"
 
 
