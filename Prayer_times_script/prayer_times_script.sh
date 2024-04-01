@@ -15,6 +15,7 @@
 #-----------------------
 #- Curl version (8.0 or higher)
 #- Wget version (1.2 or higher)
+#- Restish version (1.2 or higher)
 ##%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 set -x
